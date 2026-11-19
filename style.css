@@ -1,0 +1,254 @@
+/* ===== SELECTOR UNIVERSAL ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Century Gothic", Arial, sans-serif;
+}
+
+/* ===== SELECTOR ELEMEN ===== */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0f172a;
+    color: #e2e8f0;
+    line-height: 1.6;
+}
+
+header {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(10, 15, 30, 0.75), rgba(10, 15, 30, 0.75)), url(bg.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 3.2rem;
+    color: #ffffff;
+    margin-top: 5px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+h2 {
+    text-align: center;
+    color: #38bdf8;
+    margin-bottom: 25px;
+    font-size: 2rem;
+}
+
+h3 {
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 20px 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
+    font-size: 0.85rem;
+    color: #94a3b8;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.brand {
+    color: #ffffff;
+    font-size: 1.6rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 6px 18px;
+    border: 1px solid transparent;
+    transition: 0.4s ease;
+}
+
+ul li a:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* ===== SELECTOR CLASS ===== */
+.aktif {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.hero {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-box {
+    background-color: rgba(15, 23, 42, 0.55);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 40px 50px;
+    max-width: 800px;
+}
+
+.sapaan {
+    font-size: 1.3rem;
+    color: #7dd3fc;
+    letter-spacing: 2px;
+}
+
+.deskripsi {
+    font-size: 1.1rem;
+    color: #e2e8f0;
+    margin-top: 10px;
+}
+
+.tombol {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.btn {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.1rem;
+    padding: 8px 28px;
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+    transition: 0.5s ease;
+}
+
+.btn:hover {
+    background-color: #ffffff;
+    color: #000000;
+    transform: translateY(-3px);
+}
+
+.btn-utama {
+    background-color: #38bdf8;
+    border-color: #38bdf8;
+    color: #0f172a;
+    font-weight: bold;
+}
+
+.btn-utama:hover {
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+.kartu {
+    background-color: rgba(30, 41, 59, 0.9);
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.kartu:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(56, 189, 248, 0.25);
+}
+
+.kutipan {
+    margin-top: 18px;
+    text-align: center;
+    font-style: italic;
+    color: #38bdf8;
+}
+
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* ===== SELECTOR ID ===== */
+#home {
+    border-bottom: 3px solid #38bdf8;
+}
+
+#kontak p {
+    margin-bottom: 6px;
+}
+
+/* ===== SELECTOR KETURUNAN & PSEUDO-CLASS ===== */
+.skill-item h3 {
+    color: #38bdf8;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+td:first-child {
+    width: 35%;
+    font-weight: bold;
+}
+
+/* ===== RESPONSIVE (CSS3 Media Query) ===== */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero-box {
+        padding: 25px 20px;
+    }
+
+    .skill-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tombol {
+        flex-direction: column;
+    }
+}
